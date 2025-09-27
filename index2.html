@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Speedometer</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="hud">
+      <div class="speed-box">
+        <div class="label">Speed</div>
+        <h1 id="speed">&nbsp;</h1>
+        <div class="unit">MPH</div>
+      </div>
+
+      <div class="stats">
+        <div>GEAR <span id="gear">&nbsp;</span></div>
+        <div>FUEL <span id="fuel">&nbsp;</span></div>
+        <div>HEALTH <span id="health">&nbsp;</span></div>
+      </div>
+
+      <div class="bar">
+        <div class="bar-fill" id="fuelBar"></div>
+      </div>
+    </div>
+
+    <!-- YouTube Player Mini -->
+    <div class="yt-player">
+      <input type="text" id="ytUrl" placeholder="Paste YouTube URL here..." />
+      <button onclick="loadVideo()">Load</button>
+      <div class="video-container">
+        <iframe id="ytFrame" src="" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
